@@ -10,11 +10,10 @@ public class LineComparisonProgram {
 		 * Calling lineLength function to calculate length where i=x1, j=x2, k=y1 and
 		 * l=y2
 		 */
-		double length1 = lineLength(0, 3, 0, 5);
-		double length2 = lineLength(0, 3, 0, 5);
-
+		String length1 = String.valueOf(lineLength(0, 3, 0, 5));
+		String length2 = String.valueOf(lineLength(0, 3, 0, 5));
 		// Length Comparison between two lines
-		if (length1 == length2) {
+		if (length1.equals(length2)) {
 			System.out.println("Length of lines are equal");
 		} else
 			System.out.println("Length of lines are not equal");
